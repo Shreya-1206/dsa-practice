@@ -5,15 +5,12 @@ delete copyArr[4];  // got empty space
 console.log(copyArr)
 
 function deleteItemWithoutEmptySpace(arr, value){
-    let found =false
   for (let i = 0; i < arr.length; i++){
     if(arr[i] === value){
         console.log(arr[i]);//value blush
         console.log(i);// index
 
         arr.splice(i, 1); //takes startindex and deleteItemCount
-        found = true;
-        break;
     }
   }
   return arr;
